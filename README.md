@@ -66,7 +66,7 @@ road-rage-detection/
 
 ### **Clone the Repository**
 ```bash
-git clone https://github.com/yourusername/road-rage-detection.git
+git clone https://github.com/tanveer744/road-rage-detection.git
 cd road-rage-detection
 ```
 
