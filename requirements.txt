@@ -1,0 +1,26 @@
+# Core Libraries
+numpy==1.23.5                   # Numerical computations
+pandas==1.5.3                   # Data manipulation
+
+# Machine Learning Frameworks
+tensorflow==2.9.2               # Deep learning framework
+keras==2.9.0                    # High-level API for TensorFlow
+
+# Computer Vision
+opencv-python==4.7.0.72         # For video processing and frame extraction
+
+# Visualization and Analysis
+matplotlib==3.6.2               # Data visualization
+seaborn==0.12.1                 # Statistical data visualization
+
+# Utilities and Metrics
+scikit-learn==1.2.0             # Evaluation metrics (classification reports, confusion matrix)
+
+# Jupyter Notebooks
+notebook==6.5.2                 # For running and viewing Jupyter notebooks
+
+# Optional - Logging and Monitoring
+tensorboard==2.9.2              # For visualizing training metrics
+
+# Other Utilities
+tqdm==4.64.1                    # For progress bars in loops
