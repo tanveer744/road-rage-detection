@@ -33,31 +33,37 @@ The project implements a two-stage model-based approach:
 ```
 road-rage-detection/
 │
-├── README.md                          # Project overview and instructions
-├── requirements.txt                   # Dependencies for setup
-├── .gitignore                         # Files to exclude from Git
+├── README.md                           # Project overview, setup, and usage instructions
+├── requirements.txt                    # List of dependencies
+├── .gitignore                          # Specifies files to ignore in the repository
 │
-├── src/                               # Source code
-│   ├── main.py                        # Script for training and evaluation
-│   ├── detection_module.py            # Real-time detection implementation
-│   └── utils.py                       # Helper functions
+├── src/                                # Source code for the project
+│   ├── violence_detection.py           # Code for training and testing the Violence Detection Model
+│   ├── road_rage_detection.py          # Code for fine-tuning and testing the Road Rage Detection Model
+│   ├── live_detection.py               # Real-time detection using the Road Rage Detection Model
+│   └── utils.py                        # Utility functions (data preprocessing, metrics, etc.)
 │
-├── models/                            # Model files
-│   ├── violence_detection_model.h5    # Pretrained violence detection model
-│   └── road_rage_model.h5             # Fine-tuned road rage detection model
+├── models/                             # Folder for storing model files
+│   ├── violence_detection_model.h5     # Pretrained Violence Detection Model
+│   └── road_rage_model.h5              # Fine-tuned Road Rage Detection Model
 │
-├── data/                              # Datasets (not included in repo)
-│   ├── raw/                           # Raw video files
-│   └── processed/                     # Preprocessed files
+├── data/                               # Dataset folder (not included in the repo due to size constraints)
+│   ├── raw/                            # Raw video data (original dataset)
+│   │   └── video_data/                 # Directory for storing raw video files
+│   └── processed/                      # Preprocessed dataset (e.g., converted to .npy format)
 │
-├── notebooks/                         # Jupyter notebooks
-│   └── training_experiments.ipynb     # Training and evaluation experiments
+├── notebooks/                          # Jupyter notebooks for experiments and analysis
+│   ├── violence_training.ipynb         # Notebook for training the Violence Detection Model
+│   └── road_rage_training.ipynb        # Notebook for fine-tuning the Road Rage Detection Model
 │
-├── results/                           # Model outputs
-│   └── detection_samples/             # Example frames of detected incidents
+├── results/                            # Folder to store results and outputs
+│   ├── detection_samples/              # Example frames or videos with detected incidents
+│   └── performance_plots/              # Training and evaluation plots (accuracy, loss, etc.)
 │
-└── docs/                              # Documentation
-    └── design_documentation.md        # Design and architecture details
+└── docs/                               # Documentation and design-related files
+    ├── design_documentation.md         # Project design and architecture description
+    └── algorithm_details.md            # Algorithm details for both models
+
 ```
 
 ---
@@ -66,7 +72,7 @@ road-rage-detection/
 
 ### **Clone the Repository**
 ```bash
-git clone https://github.com/tanveer744/road-rage-detection.git
+git clone https://github.com/yourusername/road-rage-detection.git
 cd road-rage-detection
 ```
 
@@ -161,7 +167,3 @@ For more information, feel free to reach out:
 - **Mohammed Maaz**: maazkhaleel17@gmail.com
 - **Mahammad Razi**: mohdrazi4408@gmail.com
 - **Mohammed Nehal**: mohammednehal486@gmail.com
-
----
-
-This updated README file provides comprehensive details about both models, their connections, and their usage. Let me know if you need further updates!
