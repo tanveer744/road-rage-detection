@@ -26,9 +26,9 @@ data/processed/
 *.mov
 
 # Model files
-models/*.h5
-models/*.ckpt
-models/*.pb
+# models/*.h5
+# models/*.ckpt
+# models/*.pb
 
 # Logs and temporary files
 logs/
