@@ -136,7 +136,7 @@ Performance graphs and confusion matrices can be found in the notebooks.
 ## **Output Videos**
 ### **Detected Video Samples**
 Sample output videos of detected road rage incidents can be found in the `output/detected_videos/` folder.
-![Road Rage Detection ](Output/detected_videos/output.mp4)
+![Live Road Rage Detection ](Output/detected_videos/routput.mp4)
 
 
 ---
