@@ -139,7 +139,7 @@ Performance graphs and confusion matrices can be found in the Output.
 ## **Output Videos**
 ### **Detected Video Samples**
 Sample output videos of detected road rage incidents can be found in the `output/detected_videos/` folder.
-![Live Road Rage Detection ](https://private-user-images.githubusercontent.com/127640839/416328025-00d7bcb1-8efe-42b4-b800-c976883a33a8.mp4?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDA0MjE2MDMsIm5iZiI6MTc0MDQyMTMwMywicGF0aCI6Ii8xMjc2NDA4MzkvNDE2MzI4MDI1LTAwZDdiY2IxLThlZmUtNDJiNC1iODAwLWM5NzY4ODNhMzNhOC5tcDQ_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMjI0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDIyNFQxODIxNDNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0wMjMyZWQyZjZjOGExYzBjMGQ3NmVlOTdmNzk4NzVmMjAyYjI3OTA2OWRhNjFhMGM2NmIzZTk3ZjNjNGNmZWZmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.F0EmPp72nvCgIo-9DgB3azKKDjdWGCOEW5f01sg539g)
+![Live Road Rage Detection ](https://github.com/tanveer744/road-rage-detection/releases/download/v1/output.mp4)
 
 ---
 
