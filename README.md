@@ -113,7 +113,7 @@ python notebooks/LiveDetection(Violence).ipynb
 ## **Results**
 
 ### **Violence Detection Model**
-- **Accuracy**: 92%  
+- **Accuracy**: 98%  
 - **Precision**: 0.93  
 - **Recall**: 0.90  
 
