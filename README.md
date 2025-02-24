@@ -118,7 +118,7 @@ python notebooks/LiveDetection(Violence).ipynb
 - **Recall**: 0.90  
 
 **Confusion Matrix:**  
-![Violence Detection Confusion Matrix](output/confusion_matrices/violence_confusion_matrix.png)
+![Violence Detection Confusion Matrix](Output/confusion_matrices/violence_confusion_matrix.png)
 
 ### **Road Rage Detection Model**
 - **Accuracy**: 94%  
@@ -126,7 +126,7 @@ python notebooks/LiveDetection(Violence).ipynb
 - **Recall (Road Rage)**: 0.94  
 
 **Confusion Matrix:**  
-![Road Rage Detection Confusion Matrix](output/confusion_matrices/road_rage_confusion_matrix.png)
+![Road Rage Detection Confusion Matrix](Output/confusion_matrices/road_rage_confusion_matrix.png)
 
 ### **Visualization**
 Performance graphs and confusion matrices can be found in the notebooks.
