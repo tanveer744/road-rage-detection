@@ -139,12 +139,6 @@ Sample output videos of detected road rage incidents can be found in the `output
 
 ---
 
-## **Datasets**
-- **Road Rage Dataset**: [Road Rage Dataset](https://www.kaggle.com/datasets/shaiktanveer7/road-rage-dataset)
-- **Violence Detection Dataset**: [RWF-2000 Dataset](https://www.kaggle.com/datasets/vulamnguyen/rwf2000)
-
----
-
 ## **License**
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
