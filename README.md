@@ -16,8 +16,9 @@ The final **Road Rage Detection System** detects aggressive driving behavior in 
 4. [Models Overview](#models-overview)  
 5. [Usage](#usage)  
 6. [Results](#results)  
-7. [License](#license)  
-8. [Contact](#contact)
+7. [Datasets](#datasets)  
+8. [License](#license)  
+9. [Contact](#contact)
 
 ---
 
@@ -33,37 +34,15 @@ The project implements a two-stage model-based approach:
 ```
 road-rage-detection/
 │
-├── README.md                           # Project overview, setup, and usage instructions
-├── requirements.txt                    # List of dependencies
-├── .gitignore                          # Specifies files to ignore in the repository
+├── README.md              # Project overview, setup, and usage instructions
+├── requirements.txt       # List of dependencies
+├── .gitignore             # Specifies files to ignore in the repository
 │
-├── src/                                # Source code for the project
-│   ├── violence_detection.py           # Code for training and testing the Violence Detection Model
-│   ├── road_rage_detection.py          # Code for fine-tuning and testing the Road Rage Detection Model
-│   ├── live_detection.py               # Real-time detection using the Road Rage Detection Model
-│   └── utils.py                        # Utility functions (data preprocessing, metrics, etc.)
-│
-├── models/                             # Folder for storing model files
-│   ├── violence_detection_model.h5     # Pretrained Violence Detection Model
-│   └── road_rage_model.h5              # Fine-tuned Road Rage Detection Model
-│
-├── data/                               # Dataset folder (not included in the repo due to size constraints)
-│   ├── raw/                            # Raw video data (original dataset)
-│   │   └── video_data/                 # Directory for storing raw video files
-│   └── processed/                      # Preprocessed dataset (e.g., converted to .npy format)
-│
-├── notebooks/                          # Jupyter notebooks for experiments and analysis
-│   ├── violence_training.ipynb         # Notebook for training the Violence Detection Model
-│   └── road_rage_training.ipynb        # Notebook for fine-tuning the Road Rage Detection Model
-│
-├── results/                            # Folder to store results and outputs
-│   ├── detection_samples/              # Example frames or videos with detected incidents
-│   └── performance_plots/              # Training and evaluation plots (accuracy, loss, etc.)
-│
-└── docs/                               # Documentation and design-related files
-    ├── design_documentation.md         # Project design and architecture description
-    └── algorithm_details.md            # Algorithm details for both models
-
+├── notebooks/             # Jupyter notebooks for model training and analysis
+│   ├── LiveDetection(RoadRage).ipynb   # Live detection for road rage incidents
+│   ├── LiveDetection(Violence).ipynb   # Live detection for violence
+│   ├── RoadRage.ipynb                  # Model training and fine-tuning for road rage detection
+│   └── Violence.ipynb                   # Model training for violence detection
 ```
 
 ---
@@ -81,12 +60,6 @@ cd road-rage-detection
 pip install -r requirements.txt
 ```
 
-### **Download Models and Datasets**
-- **Violence Detection Model**: Download the pretrained model [here](link-to-violence-model).  
-- **Road Rage Detection Model**: Download the fine-tuned model [here](link-to-road-rage-model).  
-- Place these files in the `models/` directory.  
-- **Dataset**: Due to the large size, datasets are not included. Download the dataset [here](link-to-dataset).  
-
 ---
 
 ## **Models Overview**
@@ -94,14 +67,14 @@ pip install -r requirements.txt
 ### **Stage 1: Violence Detection Model**
 - **Purpose**: Trained on generic violence datasets to classify violent vs. non-violent videos.
 - **Architecture**: 3D CNN (3D Convolutional Neural Network).  
-- **Dataset**: Publicly available violence detection datasets (e.g., Hockey Fight dataset, Crowd Violence dataset).  
+- **Dataset**: Publicly available violence detection dataset: [RWF-2000 Dataset](https://www.kaggle.com/datasets/vulamnguyen/rwf2000)  
 
 ### **Stage 2: Road Rage Detection Model**
 - **Purpose**: Fine-tuned the pretrained violence detection model to classify road rage incidents.  
 - **Transfer Learning**:  
   - Pretrained layers from the **violence detection model** were frozen.
   - Final layers were updated for binary classification (Normal vs. Road Rage).  
-- **Dataset**: Custom road rage dataset collected from traffic cameras and online sources.  
+- **Dataset**: Road Rage dataset: [Road Rage Dataset](https://www.kaggle.com/datasets/shaiktanveer7/road-rage-dataset)  
 
 ---
 
@@ -110,31 +83,24 @@ pip install -r requirements.txt
 ### **Train the Models**
 1. **Train Violence Detection Model**:  
    ```bash
-   python src/main.py --train-violence
+   python notebooks/Violence.ipynb
    ```
-   This trains the **violence detection model** and saves it as `violence_detection_model.h5`.
+   This trains the **violence detection model** and saves it.
 
 2. **Train Road Rage Detection Model**:  
    ```bash
-   python src/main.py --train-road-rage
+   python notebooks/RoadRage.ipynb
    ```
-   This fine-tunes the **violence detection model** for road rage detection and saves it as `road_rage_model.h5`.
-
-### **Evaluate the Models**
-1. **Evaluate Violence Detection Model**:  
-   ```bash
-   python src/main.py --test-violence
-   ```
-
-2. **Evaluate Road Rage Detection Model**:  
-   ```bash
-   python src/main.py --test-road-rage
-   ```
+   This fine-tunes the **violence detection model** for road rage detection.
 
 ### **Real-Time Detection**
 To detect road rage incidents in real-time from a video stream:
 ```bash
-python src/detection_module.py --video_path path_to_video --output_dir path_to_output_directory
+python notebooks/LiveDetection(RoadRage).ipynb
+```
+To detect general violence in real-time:
+```bash
+python notebooks/LiveDetection(Violence).ipynb
 ```
 
 ---
@@ -152,7 +118,13 @@ python src/detection_module.py --video_path path_to_video --output_dir path_to_o
 - **Recall (Road Rage)**: 0.94  
 
 ### **Visualization**
-Confusion matrices and performance graphs can be found in the `results/` folder.
+Performance graphs and confusion matrices can be found in the notebooks.
+
+---
+
+## **Datasets**
+- **Road Rage Dataset**: [Road Rage Dataset](https://www.kaggle.com/datasets/shaiktanveer7/road-rage-dataset)
+- **Violence Detection Dataset**: [RWF-2000 Dataset](https://www.kaggle.com/datasets/vulamnguyen/rwf2000)
 
 ---
 
@@ -167,3 +139,4 @@ For more information, feel free to reach out:
 - **Mohammed Maaz**: maazkhaleel17@gmail.com
 - **Mahammad Razi**: mohdrazi4408@gmail.com
 - **Mohammed Nehal**: mohammednehal486@gmail.com
+
