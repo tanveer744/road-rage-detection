@@ -16,7 +16,7 @@ The final **Road Rage Detection System** detects aggressive driving behavior in 
 4. [Models Overview](#models-overview)  
 5. [Usage](#usage)  
 6. [Results](#results)  
-7. [Output Videos & Frames](#output-videos--frames)  
+7. [Output Videos](#output-videos)  
 8. [Datasets](#datasets)  
 9. [License](#license)  
 10. [Contact](#contact)
@@ -45,9 +45,9 @@ road-rage-detection/
 │   ├── RoadRage.ipynb                  # Model training and fine-tuning for road rage detection
 │   └── Violence.ipynb                   # Model training for violence detection
 │
-├── output/                # Stores the output videos and frames
+├── output/                # Stores the output videos
 │   ├── detected_videos/   # Output videos with detected incidents
-│   ├── frames/            # Extracted frames highlighting incidents
+│   ├── confusion_matrices/ # Confusion matrix images
 ```
 
 ---
@@ -117,28 +117,25 @@ python notebooks/LiveDetection(Violence).ipynb
 - **Precision**: 0.93  
 - **Recall**: 0.90  
 
+**Confusion Matrix:**  
+![Violence Detection Confusion Matrix](output/confusion_matrices/violence_confusion_matrix.png)
+
 ### **Road Rage Detection Model**
 - **Accuracy**: 94%  
 - **Precision (Normal)**: 0.95  
 - **Recall (Road Rage)**: 0.94  
+
+**Confusion Matrix:**  
+![Road Rage Detection Confusion Matrix](output/confusion_matrices/road_rage_confusion_matrix.png)
 
 ### **Visualization**
 Performance graphs and confusion matrices can be found in the notebooks.
 
 ---
 
-## **Output Videos & Frames**
+## **Output Videos**
 ### **Detected Video Samples**
 Sample output videos of detected road rage incidents can be found in the `output/detected_videos/` folder.
-
-### **Extracted Frames**
-Keyframes highlighting aggressive behavior are stored in the `output/frames/` folder. These frames provide clear visual evidence of detected incidents.
-
-To generate and store output frames, run:
-```bash
-python scripts/extract_frames.py
-```
-This script extracts and saves frames whenever a road rage incident is detected.
 
 ---
 
