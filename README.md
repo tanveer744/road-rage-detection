@@ -16,9 +16,10 @@ The final **Road Rage Detection System** detects aggressive driving behavior in 
 4. [Models Overview](#models-overview)  
 5. [Usage](#usage)  
 6. [Results](#results)  
-7. [Datasets](#datasets)  
-8. [License](#license)  
-9. [Contact](#contact)
+7. [Output Videos & Frames](#output-videos--frames)  
+8. [Datasets](#datasets)  
+9. [License](#license)  
+10. [Contact](#contact)
 
 ---
 
@@ -43,6 +44,10 @@ road-rage-detection/
 │   ├── LiveDetection(Violence).ipynb   # Live detection for violence
 │   ├── RoadRage.ipynb                  # Model training and fine-tuning for road rage detection
 │   └── Violence.ipynb                   # Model training for violence detection
+│
+├── output/                # Stores the output videos and frames
+│   ├── detected_videos/   # Output videos with detected incidents
+│   ├── frames/            # Extracted frames highlighting incidents
 ```
 
 ---
@@ -119,6 +124,21 @@ python notebooks/LiveDetection(Violence).ipynb
 
 ### **Visualization**
 Performance graphs and confusion matrices can be found in the notebooks.
+
+---
+
+## **Output Videos & Frames**
+### **Detected Video Samples**
+Sample output videos of detected road rage incidents can be found in the `output/detected_videos/` folder.
+
+### **Extracted Frames**
+Keyframes highlighting aggressive behavior are stored in the `output/frames/` folder. These frames provide clear visual evidence of detected incidents.
+
+To generate and store output frames, run:
+```bash
+python scripts/extract_frames.py
+```
+This script extracts and saves frames whenever a road rage incident is detected.
 
 ---
 
