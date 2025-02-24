@@ -16,10 +16,11 @@ The final **Road Rage Detection System** detects aggressive driving behavior in 
 4. [Models Overview](#models-overview)  
 5. [Usage](#usage)  
 6. [Results](#results)  
-7. [Output Videos](#output-videos)  
-8. [Datasets](#datasets)  
-9. [License](#license)  
-10. [Contact](#contact)
+7. [Visualisation](#visualization)
+8. [Output Videos](#output-videos)  
+9. [Datasets](#datasets)  
+10. [License](#license)  
+11. [Contact](#contact)
 
 ---
 
@@ -117,19 +118,21 @@ python notebooks/LiveDetection(Violence).ipynb
 - **Precision**: 0.93  
 - **Recall**: 0.90  
 
-**Confusion Matrix:**  
-![Violence Detection Confusion Matrix](Output/confusion_matrices/violence_confusion_matrix.png)
+
 
 ### **Road Rage Detection Model**
 - **Accuracy**: 94%  
 - **Precision (Normal)**: 0.95  
 - **Recall (Road Rage)**: 0.94  
 
-**Confusion Matrix:**  
-![Road Rage Detection Confusion Matrix](Output/confusion_matrices/road_rage_confusion_matrix.png)
 
 ### **Visualization**
-Performance graphs and confusion matrices can be found in the notebooks.
+Performance graphs and confusion matrices can be found in the Output.
+**Confusion Matrix:**  
+![Violence Detection Confusion Matrix](Output/confusion_matrices/violence_confusion_matrix.png)
+
+**Confusion Matrix:**  
+![Road Rage Detection Confusion Matrix](Output/confusion_matrices/road_rage_confusion_matrix.png)
 
 ---
 
