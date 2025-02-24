@@ -45,7 +45,7 @@ road-rage-detection/
 │   ├── RoadRage.ipynb                  # Model training and fine-tuning for road rage detection
 │   └── Violence.ipynb                   # Model training for violence detection
 │
-├── output/                # Stores the output videos
+├── output/                # Stores the output videos and frames
 │   ├── detected_videos/   # Output videos with detected incidents
 │   ├── confusion_matrices/ # Confusion matrix images
 ```
