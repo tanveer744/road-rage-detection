@@ -132,12 +132,7 @@ python notebooks/LiveDetection(Violence).ipynb
 
 
 ### **Visualization**
-Performance graphs and confusion matrices can be found in the Output.
-**Confusion Matrix:**  
-![Violence Detection Confusion Matrix](Output/confusion_matrices/violence_confusion_matrix.png)
-
-**Confusion Matrix:**  
-![Road Rage Detection Confusion Matrix](Output/confusion_matrices/road_rage_confusion_matrix.png)
+Performance graphs and confusion matrices can be found in the 'Output/confusion_matrices' folder.
 
 ---
 
