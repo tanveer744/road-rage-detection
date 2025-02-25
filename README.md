@@ -120,14 +120,14 @@ python notebooks/LiveDetection(Violence).ipynb
 
 ### **Violence Detection Model**
 - **Accuracy**: 98%  
-- **Precision**: 0.90  
+- **Precision**: 0.96  
 - **Recall**: 0.99  
 
 
 
 ### **Road Rage Detection Model**
 - **Accuracy**: 94%  
-- **Precision (Normal)**: 0.96  
+- **Precision (Normal)**: 0.90  
 - **Recall (Road Rage)**: 0.99  
 
 
