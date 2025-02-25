@@ -48,7 +48,12 @@ road-rage-detection/
 │
 ├── output/                # Stores the output videos and frames
 │   ├── detected_videos/   # Output videos with detected incidents
+|   ├── violence
+|   ├── roadrage
 │   ├── confusion_matrices/ # Confusion matrix images
+├── detected_frames/   # Frames extracted from detected incidents
+│   ├── violence/      # Extracted frames from violence detection
+│   ├── road_rage/     # Extracted frames from road rage detection
 ```
 
 ---
