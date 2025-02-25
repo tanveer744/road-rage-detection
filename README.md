@@ -145,11 +145,14 @@ Performance graphs and confusion matrices can be found in the Output.
 ### **Detected Video Samples**
 Output videos of detected road rage incidents can be found in the `output/detected_videos/road-rage` folder.
 ![Live Road Rage Detection](https://github.com/tanveer744/road-rage-detection/releases/download/v1/road-rage.mp4)
-![Fallback Image](Output\detected_frames\roadrage\frame_88.jpg)
+![Fallback Image](https://github.com/tanveer744/road-rage-detection/releases/download/v2/frame_88.jpgg)
 
 Output videos of detected Violence incidents can be found in the `output/detected_videos/violence` folder.
 ![Live Violence Detection](https://github.com/tanveer744/road-rage-detection/releases/download/v2/violence.mp4)
-![Fallback Image](Output\detected_frames\violence\frame_128.jpg)
+![Fallback Image](https://github.com/tanveer744/road-rage-detection/releases/download/v1/frame_128.jpg
+)
+
+
 ---
 
 ## **License**
